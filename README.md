@@ -1,110 +1,61 @@
-# HTML
+# 🎮 Game Guide AI - NLW
 
-- HyperText
- - texto puros, livros, revistasm jornais
- - link: acessar outros documentos
- - imagens, vídeos, áudios
-- Markup
- - marcação
- - tags <a> link </a>
- - atributos: <a href="https://www.rocketseat.com.br">https://www.rocketseat.com.br</a>
- - globais: id, class, ...
-- Language
- - linguagem
- - sintaxe: maneira de escrever
+Este projeto foi desenvolvido durante o evento **NLW** da **Rocketseat**. Trata-se de um assistente inteligente focado em jogos, capaz de responder perguntas sobre estratégias, builds, itens e dicas, utilizando a poderosa API do **Google Gemini**.
 
+## 🚀 Funcionalidades
 
-# HTTP
+- **Seleção de Jogo**: Escolha o jogo sobre o qual deseja perguntar.
+- **Perguntas Personalizadas**: Faça perguntas específicas sobre mecânicas ou meta atual.
+- **Respostas com IA**: Utiliza o modelo `gemini-2.5-flash` para gerar respostas precisas.
+- **Busca em Tempo Real**: A IA utiliza a ferramenta de busca do Google (Google Grounding) para trazer informações atualizadas sobre patches recentes.
+- **Formatação Markdown**: As respostas são exibidas formatadas (negrito, listas, etc.) para melhor leitura.
 
-- HyperText Transfer Protocol
- - protocolo de transferência de hipertexto
-- Methods HTTP (verbos): Get, Post, Put/Patch, Delete
-- Headers (cabeçalhos): instruções extras para cada chamada
+## 🛠️ Tecnologias Utilizadas
 
+- **HTML5**: Estrutura da página.
+- **CSS3**: Estilização (layout e visual).
+- **JavaScript (Vanilla)**: Lógica da aplicação e integração com a API.
+- **Google Gemini API**: Inteligência Artificial generativa.
+- **Showdown.js**: Biblioteca para converter a resposta da IA (Markdown) em HTML.
 
+## 🔑 Como obter a API Key do Gemini
 
-# URL
+Para utilizar este projeto, você precisará de uma chave de API gratuita do Google:
 
-- Uniform
- - Uniforme
+1. Acesse o Google AI Studio.
+2. Faça login com sua conta Google.
+3. Clique em **"Get API key"** no menu lateral esquerdo.
+4. Clique em **"Create API key"**.
+5. Copie a chave gerada (ela começa com `AIza...`).
 
-- Resource
- - Recurso
+## 📦 Como rodar o projeto
 
-- Locator
- - Localizador
-Encontrar um recurso (html, css, js, pdf, png, jpg, mp4 ...)
+### Pré-requisitos
+- Um navegador web moderno (Chrome, Firefox, Edge, etc.).
+- Uma API Key do Google Gemini.
 
+### Passo a passo
 
-# IP
+1. **Clone o repositório**:
+   Abra seu terminal e execute o comando abaixo:
+   ```bash
+   git clone https://github.com/seu-usuario/game-guide-nlw.git
+   ```
 
-- Internet Protocol
- - Protocolo de Internet
-  - Conjunto de regras
+2. **Acesse a pasta do projeto**:
+   ```bash
+   cd game-guide-nlw
+   ```
 
-Endereço do computador
-rocketseat.com.br (domínio)
-123.32.1.23 (ip)
+3. **Abra o projeto**:
+   Abra o arquivo `index.html` no seu navegador.
 
-# DNS
+## 🕹️ Como usar
 
-- Domain Name Service
- - Serviço de nome
+1. No campo **"API Key"**, cole a chave que você gerou no Google AI Studio.
+2. Selecione o **Jogo** desejado no menu suspenso.
+3. Digite sua **pergunta** (ex: "Qual a melhor build para Rengar?").
+4. Clique em **"Perguntar"**.
+5. Aguarde a IA processar e veja a resposta na tela!
 
-# CSS
-
-- Cascading Style Sheets
- - Folhas de estilo em cascata
-
-de um arquivo que terá na sua sintaxe, declaroções, propriedades e valores.
-A partir disso, o HTMl é impactado visualmente
-
-# JS
-
-- Linguagem de programação
-- Browsers
-- Input -> Process -> OutPut
-- Variáveis
-- Function
- - Agrupamento de códigos
- - Sequencia lógica
- - Saída
-- Gemini (IA): esperar uma resposta
-- Mexer no meu navegador
-- Estrutura de dados
-- Estrutura de decisão
-- Lógica (Pensamento computacional)
- - Abstração
- - Decomposição
- - Algoritmo
-- Tipos de dados
- - Number (números)
- - String (texto)
- - Boolean (true | false)
- - Objetos
-
-# DOM
-
-- Document Object Model
-
-# API 
-
-- Application Programming Interface
- - Interface de Programação de Aplicativos
-
--JSON: JavaScrip Object Notation
-
-# CDN
-
-- Content Delivery Network
- - Rede de entrega de conteúdo
-
-# Agentes IA
-
-- Tools (ferramentas): permitem uso de código, ou apps, ou qualquer informação extra.
-- Melhor contexto
-
-# Engenharia de prompt
-- One shot: uma única pergunta sem muito contexto
-- few shot: é apresentado exemplos do que se espera
-- chain of thought: cadeia de pensamento para a IA responder gradativamente conforme a instrução.
+---
